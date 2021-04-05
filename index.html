@@ -15,20 +15,20 @@
 <body>
 
     <!--Navbar Mobile-->
-    <nav id="home" class="navbar">
+    <nav id="home" class="mobile">
         <div class="container nav">
-            <span><a href="#home"></span><span href="#home" class="material-icons">
-                        home
-                    </span></a></span>
-            <span><a href="#about"><span class="material-icons">
-                        info
-                    </span></a></span>
-            <span><a href="#events"><span class="material-icons">
-                        event
-                    </span></a></span>
-            <span><a href="#join"><span class="material-icons">
-                        group
-                    </span></a></span>
+            <a href="#home"><span href="#home" class="material-icons">
+                    home
+                </span></a>
+            <a href="#about"><span class="material-icons">
+                    info
+                </span></a>
+            <a href="#events"><span class="material-icons">
+                    event
+                </span></a>
+            <a href="#join"><span class="material-icons">
+                    group
+                </span></a>
         </div>
     </nav>
 
@@ -51,34 +51,77 @@
     </header>
 
     <!--About section-->
-    <section id="about">
-        <h2>What's it all about?</h2>
-        <p><span class="material-icons-outlined">
-                lightbulb
-            </span>Create and experiment with new ideas together.</p>
-        <p><span class="material-icons-outlined">
-                build
-            </span>Build projects using pair programming.</p>
-        <p><span class="material-icons-outlined">
-                done
-            </span>Check your work for bugs.</p>
-        <p><span class="material-icons-outlined">
-                visibility
-            </span>Have a second pair of eye's to proof read.</p>
+    <section id="about" class="container">
         <div class="container">
-            <div>
-                <img src="./assets/about1.jpg">
+            <h2>Information</h2>
+        </div>
+        <div class="container">
+            <img id="perspective" src="./assets/new_perspective.jpg">
+        </div>
+        <div class="container description">
+            <span class="material-icons left">
+                lightbulb
+            </span>
+            <p>Create and experiment with new ideas together.</p>
+        </div>
+        <div>
+            <img src="./assets/about2.jpg">
+        </div>
+
+        <div class="container description">
+            <span class="material-icons left">
+                build
+            </span>
+            <p>Build projects using pair programming.</p>
+        </div>
+        <div>
+            <img src="./assets/about1.jpg">
+        </div>
+        <div class="container description">
+            <span class="material-icons">
+                visibility
+            </span>
+            <p>Have a second pair of eye's for debugging.</p>
+        </div>
+        <div>
+            <img src="./assets/about.jpg">
+        </div>
+    </section>
+    <section id="events">
+        <div class="title">
+            <h2>Events</h2>
+        </div>
+        <div class=container>
+            <div class="container pics">
+                <img src="assets/pair3.jpg">
+                <p>Full group meetups</p>
             </div>
-            <div>
-                <img src="./assets/new_perspective.jpg">
+            <div class="container pics">
+                <img id="large-pic" src="assets/pair4.jpg">
+                <p>Paring up events</p>
             </div>
-            <div>
-                <img src="./assets/about.jpg">
+            <div class="container pics">
+                <img src="assets/pair1.jpg">
+                <p>Brainstorming sessions</p>
             </div>
-            <div>
-                <img src="./assets/about2.jpg">
+            <div class="container pics">
+                <img src="assets/pair2.jpg">
+                <p>Pair programming nights</p>
             </div>
         </div>
+
+    </section>
+    <section id="join">
+        <h2>Join Us</h2>
+        <form class="container form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Jdoe">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="6+ char">
+            <br>
+            <input type="submit" name="submit">
+        </form>
     </section>
 
 </body>
